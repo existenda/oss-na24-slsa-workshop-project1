@@ -109,5 +109,5 @@ jobs:
         run: |
           # Update the image as recorded in your logs
           image="${IMAGE}@${DIGEST}"
-          source_uri=https://github.com/existenda/oss-na24-slsa-workshop-project1
+          source_uri=github.com/existenda/oss-na24-slsa-workshop-project1
           slsa-verifier verify-image "${image}" --source-uri "${source_uri}" --builder-id=https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml
